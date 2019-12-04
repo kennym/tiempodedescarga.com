@@ -13,8 +13,8 @@ const SIZES = {
 }
 
 const DOWNLOAD_UNITS = {
-  KBPS: { speed: 'KBps', byteSize: 'KB', factor: 8000 },
-  MBPS: { speed: 'MBps', byteSize: 'MB', factor: 8 }
+  KBPS: { speed: 'Kbps', byteSize: 'KB', factor: 8000 },
+  MBPS: { speed: 'Mbps', byteSize: 'MB', factor: 8 }
 }
 
 class App extends Component {
@@ -129,13 +129,13 @@ class App extends Component {
                           onClick={() => this.setDownloadUnit(DOWNLOAD_UNITS.KBPS)}
                           className={"btn btn-outline-secondary btn-outline-light " + (this.state.downloadUnit === DOWNLOAD_UNITS.KBPS ? "active" : '')}
                           type="button">
-                          KBps
+                          Kbps
                         </button>
                         <button
                           onClick={() => this.setDownloadUnit(DOWNLOAD_UNITS.MBPS)}
                           className={"btn btn-outline-secondary btn-outline-light " + (this.state.downloadUnit === DOWNLOAD_UNITS.MBPS ? "active" : '')}
                           type="button">
-                          MBps
+                          Mbps
                         </button>
                       </div>
                     </div>
@@ -171,27 +171,29 @@ class App extends Component {
                   <div className="col-xl-6 col-lg-7">
                     <h2>Información útil</h2>
 
+                    <p>1 Byte equivale a 8 bits.</p>
+
                     <table className="table table-hover">
                     <tbody>
                         <tr>
-                            <th class="w-25">Location</th>
-                            <th class="w-50">Date</th>
-                            <th class="w-25">Visits</th>
+                          <th>Unidad</th>
+                          <th>Cómo se lee</th>
+                          <th>Otras formas de escribir</th>
                         </tr>
                         <tr>
-                            <td>Westfield</td>
-                            <td>08.05.18 <span class="badge badge-primary copyable">badge<a href="" class="copyable-trigger" data-original-title="" title="">&lt;&gt;</a></span></td>
-                            <td>2323</td>
+                            <td>KBps</td>
+                            <td>KiloByte por segundo</td>
+                            <td>1 KB/s</td>
                         </tr>
                         <tr>
-                            <td>Galway</td>
-                            <td>08.05.18 <span class="badge badge-pill badge-primary copyable">badge-pill<a href="" class="copyable-trigger" data-original-title="" title="">&lt;&gt;</a></span></td>
-                            <td>5362</td>
+                            <td>MBps</td>
+                            <td>MegaByte por segundo</td>
+                            <td>1 MB/s</td>
                         </tr>
-                        <tr class="table-primary">
-                            <td>Bern</td>
-                            <td>08.05.18</td>
-                            <td>153</td>
+                        <tr>
+                            <td>GBps</td>
+                            <td>GigaByte por segundo</td>
+                            <td>1 GB/s</td>
                         </tr>
                     </tbody>
                 </table>
