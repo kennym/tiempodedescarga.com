@@ -162,6 +162,12 @@ class App extends Component {
             <div className="col-12 vh-50">
               <div className="container">
                 <div className="row">
+                  <div className="col-xl-12 col-lg-12">
+                    <h2 className='text-center'>Calcular mi tiempo de descarga:</h2>
+                    <div style={{textAlign:'right'}}><div style={{ minHeight: '360px' }}><div style={{ width: '100%', height:0, paddingBottom:'50%',position:'relative'}}><iframe style={{ border:'none',position:'absolute',top:0,left:0,width:'100%',height:'100%',minHeight:'360px',border: 'none',overflow:'hidden !important'}} src="//openspeedtest.com/Get-widget.php"></iframe></div></div>Provided by  <a href="http://openspeedtest.com">OpenSpeedtest.com</a></div>
+                  </div>
+                </div>
+                <div className="row">
                   <div className="col-xl-6 col-lg-7">
                     <h2>¿Qué es TiempoDeDescarga.com?</h2>
 
